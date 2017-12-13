@@ -30,6 +30,10 @@ var findIt = function(e) {
     dist = distance(targetX,targetY,mouseX,mouseY)/halfdist
     dist = 255 - Math.floor(dist*255)
     box.style.backgroundColor =rgb(dist, 0 ,0)
+    if(dist >240){
+      box.style.backgroundColor = "blue";
+    }
+    console.log(dist)
 }
 
 function rgb(r, g, b){
